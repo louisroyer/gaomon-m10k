@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="input", ATTRS{idVendor}=="256c", ATTRS{idProduct}=="006e",
+TAG+="systemd", ENV{SYSTEMD_USER_WANTS}="gaomon-m10k.service"

@@ -1,0 +1,9 @@
+[Unit]
+Description=Pad binding for GAOMON Tablet
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/gaomon-m10k.sh
+
+[Install]
+WantedBy=multi-user.target
