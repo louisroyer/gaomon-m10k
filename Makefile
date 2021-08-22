@@ -8,7 +8,7 @@ UDEV_DIR = /etc/udev/rules.d/
 RM = rm -f
 CP = cp -r --preserve=mode
 MKDIR_P = mkdir -p
-RMDIR = rmdir
+RMDIR_P = rmdir -p
 
 .PHONY: install uninstall installdirs uninstalldirs
 
@@ -18,7 +18,7 @@ installdirs:
 		$(DESTDIR)$(SYSTEMD_DIR) \
 		$(DESTDIR)$(UDEV_DIR)
 uninstalldirs:
-	$(RMDIR) \
+	$(RMDIR_P) \
 		$(DESTDIR)$(bindir) \
 		$(DESTDIR)$(SYSTEMD_DIR) \
 		$(DESTDIR)$(UDEV_DIR)
