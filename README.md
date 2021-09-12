@@ -8,3 +8,6 @@ Tested with Linux 5.10.0-8-amd64
 # make install
 $ systemctl --user enable --now gaomon-m10k.service
 ```
+
+## Troubleshooting
+If not working, ensure you are using X11 and not Wayland.
